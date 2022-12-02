@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>I finally finished my story</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.codehs.com/gulp/80550f5fc4071985bfef352d04f005ca3de931d3/chs-js-lib/chs.js"></script>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Solway">
+<style>
+canvas {
+    border: 0px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+body {
+  font-family: 'Solway', slab-serif;
+        font-size: 25px;
+        text-align: center;
+        background-color: #DBF9FC;
+}
+
+img {
+position: fixed;
+  top: 100px;
+  left: 590px;
+  width: 256px;
+  height: 409px;
+  border: 0px green solid;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>I finally finished my story!</h1>
+
+<canvas
+width="400"
+height="400"
+class="codehs-editor-canvas"></canvas>
+
+<a href="https://docs.google.com/document/d/1v0wg1AMq8Lox2IMggtu7D4bdrQPXYJduxqQLBeMvRYg/edit?usp=sharing"><img src="https://codehs.com/uploads/bdce9ccc42bdcc80c9628e26f2e0c684"></a>
+
+<pre id="console"></pre>
+<span id="loader" style="font-family: Solway;">When The Elevator Stopped</span>
+<script>
+window.onload = function() {
+
+var cover = new WebImage("https://codehs.com/uploads/59e35dbaccfecd3acb6a759d2a2225e4")
+var WIDTH = 1410;
+var HEIGHT = 2250;
+
+
+cover.setSize(WIDTH/5.5, HEIGHT/5.5); // set the dimensions of the image
+cover.setPosition(getWidth()/2 - WIDTH/11, getHeight()/2 - getHeight() + HEIGHT/11);
+add(cover);
+
+cover.onclick = function() {
+    window.location.href = 'https://docs.google.com/document/d/1v0wg1AMq8Lox2IMggtu7D4bdrQPXYJduxqQLBeMvRYg/edit?usp=sharing';
+};
+document.body.appendChild(cover);
+
+};
+</script>
+<h4>Click the cover to read it...</h4>
+</body>
+</html>
